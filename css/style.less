@@ -2,6 +2,7 @@
 li {
     list-style-type: none;
 }
+
 body {
     margin: 0;
 }
@@ -17,6 +18,7 @@ button {
     color: rgb(34, 34, 34);
     line-height: 0.833;
 }
+
 .head-text {
     .rob-lgt;
     font-size: 14px;
@@ -24,33 +26,40 @@ button {
     line-height: 1.714;
     text-align: center;
 }
+
 /* main class of fonts */
 // Dosis
 .dos-reg {
     font-family: 'Dosis', sans-serif;
     font-weight: 400;
 }
+
 .dos-med {
     font-family: 'Dosis', sans-serif;
     font-weight: 500;
 }
+
 .dos-semi {
     font-family: 'Dosis', sans-serif;
     font-weight: 600;
 }
+
 .dos-bold {
     font-family: 'Dosis', sans-serif;
     font-weight: 700;
 }
+
 // Roboto
 .rob-lgt {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
 }
+
 .rob-reg {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
 }
+
 .rob-med {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
@@ -59,9 +68,9 @@ button {
 
 /* section header */
 #header {
-    background-image: -moz-linear-gradient( 0deg, rgb(253,113,44) 0%, rgb(242,23,128) 100%);
-    background-image: -webkit-linear-gradient( 0deg, rgb(253,113,44) 0%, rgb(242,23,128) 100%);
-    background-image: -ms-linear-gradient( 0deg, rgb(253,113,44) 0%, rgb(242,23,128) 100%);
+    background-image: -moz-linear-gradient(0deg, rgb(253, 113, 44) 0%, rgb(242, 23, 128) 100%);
+    background-image: -webkit-linear-gradient(0deg, rgb(253, 113, 44) 0%, rgb(242, 23, 128) 100%);
+    background-image: -ms-linear-gradient(0deg, rgb(253, 113, 44) 0%, rgb(242, 23, 128) 100%);
     left: 0px;
     top: 0px;
     width: 100%;
@@ -74,9 +83,11 @@ button {
     top: 20%;
     height: 65%;
     width: 45%;
+
     @media (min-width: 576px) and (max-width: 767px) {
         height: 30%;
     }
+
     @media (min-width: 0px) and (max-width: 575px) {
         height: 15%;
         top: 15%;
@@ -88,6 +99,7 @@ button {
         &-logo {
             display: flex;
             align-items: center;
+
             h2 {
                 .dos-bold;
                 font-size: 36px;
@@ -95,14 +107,17 @@ button {
                 line-height: 0.667;
             }
         }
+
         &-link {
             display: flex;
             align-items: center;
             justify-content: flex-end;
+
             ul {
                 display: flex;
                 align-items: center;
                 padding: 0;
+
                 li {
                     a {
                         padding: 10px 25px;
@@ -112,9 +127,11 @@ button {
                         color: rgb(255, 255, 255);
                         line-height: 1.714;
                         text-decoration: none;
+
                         @media (min-width: 0px) and (max-width: 767px) {
                             padding: 5px 10px;
                         }
+
                         &:hover {
                             .rob-med;
                             color: rgb(34, 34, 34);
@@ -124,46 +141,58 @@ button {
                     }
                 }
             }
+
             @media (min-width: 0px) and (max-width: 576px) {
                 display: none;
             }
         }
-    } /* nav */
+    }
+
+    /* nav */
     &-content {
         margin-top: 6%;
+
         h1 {
             .dos-semi;
             font-size: 54px;
             color: rgb(255, 255, 255);
             line-height: 1.111;
             margin: 0;
+
             @media (min-width: 0px) and (max-width: 767px) {
                 font-size: 36px;
             }
         }
+
         p {
             .rob-lgt;
             font-size: 14px;
             color: rgb(255, 255, 255);
             line-height: 1.714;
+
             @media (min-width: 0px) and (max-width: 767px) {
                 font-size: 12px;
             }
         }
+
         ul {
             padding-left: 22px;
+
             li {
                 list-style-image: url(/img/header/marker.png);
+
                 p {
                     .rob-reg;
                     font-size: 14px;
                     line-height: 1.714;
+
                     @media (min-width: 0px) and (max-width: 767px) {
                         font-size: 12px;
                     }
                 }
             }
         }
+
         button {
             outline: none;
             .rob-med;
@@ -173,6 +202,7 @@ button {
             background-color: rgb(255, 255, 255);
             height: 40px;
             width: 182px;
+
             &:hover {
                 box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.1);
             }
@@ -190,6 +220,7 @@ button {
         display: flex;
         align-items: center;
         justify-content: center;
+
         &-img {
             display: flex;
             align-items: center;
@@ -201,18 +232,22 @@ button {
             background-color: rgba(247, 250, 252, 0);
             width: 77px;
             height: 77px;
+
             &:hover {
                 box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.1);
             }
         }
+
         &-info {
             margin-left: 25px;
+
             h3 {
                 .dos-reg;
                 font-size: 24px;
                 color: rgb(34, 34, 34);
-                line-height: 1;   
+                line-height: 1;
             }
+
             p {
                 .rob-lgt;
                 font-size: 14px;
@@ -220,23 +255,29 @@ button {
                 line-height: 1.714;
             }
         }
-    } /* content */
+    }
+
+    /* content */
     &-info {
         &-block {
             padding: 15% 0;
         }
+
         &-img {
             img {
                 height: 90%;
                 width: 70%;
             }
+
             @media (min-width: 768px) and (max-width: 991px) {
                 margin-top: 150px;
             }
+
             @media (min-width: 0px) and (max-width: 767px) {
                 margin-top: 110px;
             }
         }
+
         &-shadow {
             img {
                 position: absolute;
@@ -244,39 +285,49 @@ button {
                 top: 55%;
             }
         }
+
         &-text {
             padding: 40px 0;
+
             h2 {
                 .dos-med;
                 font-size: 36px;
                 color: rgb(34, 34, 34);
                 line-height: 0.833;
+
                 @media (min-width: 0px) and (max-width: 767px) {
                     font-size: 24px;
                 }
             }
+
             p {
                 .rob-lgt;
                 font-size: 14px;
                 color: rgb(119, 119, 119);
                 line-height: 1.714;
+
                 @media (min-width: 0px) and (max-width: 767px) {
                     font-size: 11px;
                 }
             }
+
             ul {
                 padding-left: 22px;
                 margin-top: 30px;
+
                 @media (min-width: 0px) and (max-width: 767px) {
                     margin-top: 10px;
                 }
+
                 li {
                     list-style-image: url(/img/features/marker.png);
+
                     p {
                         .rob-reg;
                         font-size: 14px;
                         color: rgb(119, 119, 119);
                         line-height: 1.714;
+
                         @media (min-width: 0px) and (max-width: 767px) {
                             font-size: 11px;
                         }
@@ -284,20 +335,24 @@ button {
                 }
             }
         }
+
         &-st {
             margin-top: 50px;
+
             @media (min-width: 0px) and (max-width: 767px) {
                 margin-top: 20px;
             }
         }
-    } /* info */
+    }
+
+    /* info */
 }
 
 .grey-line {
-        background-color: rgb(238, 238, 238);
-        width: 100%;
-        height: 2px;
-        margin-top: 120px;
+    background-color: rgb(238, 238, 238);
+    width: 100%;
+    height: 2px;
+    margin-top: 120px;
 }
 
 /* screenshots section */
@@ -313,39 +368,46 @@ button {
         align-items: center;
         justify-content: center;
         flex-direction: column;
+
         h2 {
             .head-2;
         }
+
         p {
             .head-text;
         }
     }
 }
 
-  #carousel {
-    width:100%;
+#carousel {
+    width: 100%;
     margin: 60px auto;
     height: 500px;
-    position:relative;
-    clear:both;
-    overflow:hidden;
+    position: relative;
+    clear: both;
+    overflow: hidden;
     background-color: rgb(247, 250, 252);
-  }
-  #carousel img {
-    visibility:hidden; /* hide images until carousel can handle them */
-    cursor:pointer; /* otherwise it's not as obvious items can be clicked */
+}
+
+#carousel img {
+    visibility: hidden;
+    /* hide images until carousel can handle them */
+    cursor: pointer;
+    /* otherwise it's not as obvious items can be clicked */
     height: 85%;
-    box-shadow: 0px 10px 20px 5px rgba(122,122,122,0.5);
-  }
+    box-shadow: 0px 10px 20px 5px rgba(122, 122, 122, 0.5);
+}
 
-  #prev {
-      left: 0;
-  }
-  #next {
-      right: 0;
-  }
+#prev {
+    left: 0;
+}
 
-  #prev, #next {
+#next {
+    right: 0;
+}
+
+#prev,
+#next {
     position: absolute;
     margin-top: 27%;
     z-index: 999;
@@ -357,43 +419,50 @@ button {
     align-items: center;
     justify-content: center;
     box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.1);
+
     &:hover {
         border-radius: 50%;
-        background-image: -moz-linear-gradient( 0deg, rgb(253,113,44) 0%, rgb(242,23,128) 100%);
-        background-image: -webkit-linear-gradient( 0deg, rgb(253,113,44) 0%, rgb(242,23,128) 100%);
-        background-image: -ms-linear-gradient( 0deg, rgb(253,113,44) 0%, rgb(242,23,128) 100%);
+        background-image: -moz-linear-gradient(0deg, rgb(253, 113, 44) 0%, rgb(242, 23, 128) 100%);
+        background-image: -webkit-linear-gradient(0deg, rgb(253, 113, 44) 0%, rgb(242, 23, 128) 100%);
+        background-image: -ms-linear-gradient(0deg, rgb(253, 113, 44) 0%, rgb(242, 23, 128) 100%);
+
         a {
-            color: rgb(255,255,255)
+            color: rgb(255, 255, 255)
         }
     }
-  }
+}
 
-  .screen-toggle {
+.screen-toggle {
     .dos-bold;
     text-decoration: none;
     font-size: 15px;
     color: rgb(119, 119, 119);
     line-height: 2.143;
-  }
+}
 
-  .split-left {
-    width:450px;
-    float:left;
-  }
-  .split-right {
-    width:400px;
-    float:left;
-  }
-  #callback-output {
-    height:250px;
-    overflow:scroll;
-  }
-  textarea#newoptions {
-    width:430px;
-  }
-  .nav {
-    width: 80px; margin: 20px auto
-  }
+.split-left {
+    width: 450px;
+    float: left;
+}
+
+.split-right {
+    width: 400px;
+    float: left;
+}
+
+#callback-output {
+    height: 250px;
+    overflow: scroll;
+}
+
+textarea#newoptions {
+    width: 430px;
+}
+
+.nav {
+    width: 80px;
+    margin: 20px auto
+}
 
 /* package section */
 #package {
@@ -403,28 +472,35 @@ button {
 .package {
     &-text {
         padding-bottom: 50px;
+
         h2 {
             .head-2;
         }
+
         p {
             .head-text;
         }
     }
+
     &-block {
         text-align: center;
+
         &-bg {
             background-color: rgb(247, 250, 252);
             height: 100%;
             width: 100%;
             padding: 40px 0px;
+
             p {
                 .head-text;
                 margin: 7px 0;
             }
+
             span {
                 .head-text;
                 color: rgb(170, 170, 170);
             }
+
             button {
                 margin-top: 15px;
                 border-style: solid;
@@ -438,22 +514,25 @@ button {
                 font-size: 14px;
                 color: rgb(51, 51, 51);
                 line-height: 1.711;
+
                 &:hover {
-                    border: 3px solid rgba(0,0,0,0.1);
+                    border: 3px solid rgba(0, 0, 0, 0.1);
                     border-radius: 20px;
-                    background-image: -moz-linear-gradient( 0deg, rgb(253,113,44) 0%, rgb(242,23,128) 100%);
-                    background-image: -webkit-linear-gradient( 0deg, rgb(253,113,44) 0%, rgb(242,23,128) 100%);
-                    background-image: -ms-linear-gradient( 0deg, rgb(253,113,44) 0%, rgb(242,23,128) 100%);
+                    background-image: -moz-linear-gradient(0deg, rgb(253, 113, 44) 0%, rgb(242, 23, 128) 100%);
+                    background-image: -webkit-linear-gradient(0deg, rgb(253, 113, 44) 0%, rgb(242, 23, 128) 100%);
+                    background-image: -ms-linear-gradient(0deg, rgb(253, 113, 44) 0%, rgb(242, 23, 128) 100%);
                     box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.1);
                     color: rgb(255, 255, 255);
                 }
             }
+
             @media (min-width: 0px) and (max-width: 767px) {
                 margin-top: 50px;
                 padding: 20px 0px;
                 height: 90%;
             }
         }
+
         h4 {
             .dos-reg;
             font-size: 20px;
@@ -461,16 +540,20 @@ button {
             line-height: 1.2;
             margin-top: 5px;
         }
+
         &-price {
             text-align: center;
             display: block;
+
             &-grad {
                 width: 100%;
                 display: none;
             }
+
             &-white {
                 width: 100%;
             }
+
             p {
                 .dos-med;
                 font-size: 38px;
@@ -479,18 +562,22 @@ button {
                 position: absolute;
                 margin-left: 27%;
                 margin-top: -35%;
+
                 @media (min-width: 992px) and (max-width: 1999px) {
                     margin-left: 18%;
                 }
+
                 @media (min-width: 768px) and (max-width: 991px) {
                     margin-left: 19%;
-                    font-size: 24px;    
+                    font-size: 24px;
                 }
+
                 @media (min-width: 0px) and (max-width: 767px) {
                     margin-left: 17%;
-                    font-size: 28px;    
+                    font-size: 28px;
                 }
             }
+
             &-line {
                 text-align: center;
                 border-bottom: 1px dashed rgb(238, 238, 238);
@@ -498,20 +585,24 @@ button {
                 margin-left: 10%;
             }
         }
+
         &:hover {
             .package {
                 &-block {
                     &-bg {
                         box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.1);
                     }
+
                     &-price {
                         &-white {
                             display: none;
                         }
+
                         p {
                             color: rgb(255, 255, 255);
                             position: absolute;
                         }
+
                         &-grad {
                             display: block;
                         }
@@ -527,33 +618,38 @@ button {
     width: 100%;
     height: 400px;
 }
+
 #video {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+
 #overlay-video {
     height: 400px;
     position: absolute;
     width: 100%;
     z-index: 999;
     background-color: rgb(0, 0, 0);
-    opacity: 0.702;        
+    opacity: 0.702;
 }
+
 #overlay-video.o {
     background: none;
+
     .overlay-play {
         display: none;
     }
 }
+
 .overlay-play {
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    background-image: -moz-linear-gradient( 0deg, rgb(253,113,44) 0%, rgb(242,23,128) 100%);
-    background-image: -webkit-linear-gradient( 0deg, rgb(253,113,44) 0%, rgb(242,23,128) 100%);
-    background-image: -ms-linear-gradient( 0deg, rgb(253,113,44) 0%, rgb(242,23,128) 100%);
+    background-image: -moz-linear-gradient(0deg, rgb(253, 113, 44) 0%, rgb(242, 23, 128) 100%);
+    background-image: -webkit-linear-gradient(0deg, rgb(253, 113, 44) 0%, rgb(242, 23, 128) 100%);
+    background-image: -ms-linear-gradient(0deg, rgb(253, 113, 44) 0%, rgb(242, 23, 128) 100%);
     width: 75px;
     height: 75px;
     margin-left: 46%;
@@ -570,10 +666,12 @@ button {
         h2 {
             .head-2;
         }
+
         p {
             .head-text;
         }
     }
+
     &-carousel {
         &-block {
             width: 25%;
@@ -581,47 +679,61 @@ button {
             display: flex;
             padding: 0.5%;
             outline: none;
+
             p {
                 .head-text;
                 text-align: left;
+
                 @media (min-width: 0px) and (max-width: 767px) {
-                    font-size: 10px;    
+                    font-size: 10px;
                 }
             }
+
             &-photo {
                 img {
-                    -moz-border-radius: 50%; /* Firefox */ 
-                    -webkit-border-radius: 50%; /* Safari, Chrome */ 
-                    -khtml-border-radius: 50%; /* KHTML */ 
+                    -moz-border-radius: 50%;
+                    /* Firefox */
+                    -webkit-border-radius: 50%;
+                    /* Safari, Chrome */
+                    -khtml-border-radius: 50%;
+                    /* KHTML */
                     border-radius: 50%;
                     width: 30%;
                 }
+
                 display: flex;
                 align-items: center;
+
                 &-info {
                     margin-left: 30px;
                     justify-content: flex-start;
                     flex-direction: column;
+
                     @media (min-width: 0px) and (max-width: 767px) {
-                        margin-left: 10px;    
+                        margin-left: 10px;
                     }
+
                     h5 {
                         font-size: 18px;
                         .dos-reg;
                         margin: 0;
+
                         @media (min-width: 0px) and (max-width: 767px) {
-                            font-size: 12px;    
+                            font-size: 12px;
                         }
                     }
+
                     p {
                         .head-text;
                         margin: 0;
+
                         @media (min-width: 0px) and (max-width: 767px) {
-                            font-size: 10px;    
+                            font-size: 10px;
                         }
                     }
                 }
             }
+
             &:hover {
                 background-color: rgb(255, 255, 255);
                 box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.1);
@@ -634,7 +746,8 @@ button {
     margin: 0.2%;
 }
 
-.slick-prev, .slick-next {
+.slick-prev,
+.slick-next {
     position: absolute;
     z-index: 999;
     width: 40px;
@@ -647,10 +760,11 @@ button {
     box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.1);
     outline: none;
     text-decoration: none;
+
     &:hover {
-        background-image: -moz-linear-gradient( 0deg, rgb(253,113,44) 0%, rgb(242,23,128) 100%);
-        background-image: -webkit-linear-gradient( 0deg, rgb(253,113,44) 0%, rgb(242,23,128) 100%);
-        background-image: -ms-linear-gradient( 0deg, rgb(253,113,44) 0%, rgb(242,23,128) 100%);
+        background-image: -moz-linear-gradient(0deg, rgb(253, 113, 44) 0%, rgb(242, 23, 128) 100%);
+        background-image: -webkit-linear-gradient(0deg, rgb(253, 113, 44) 0%, rgb(242, 23, 128) 100%);
+        background-image: -ms-linear-gradient(0deg, rgb(253, 113, 44) 0%, rgb(242, 23, 128) 100%);
         color: #fff;
         border-radius: 50%;
 
@@ -661,6 +775,7 @@ button {
     margin-top: 10%;
     margin-left: -3%;
 }
+
 .slick-next {
     position: absolute;
     margin-top: -16%;
@@ -669,9 +784,9 @@ button {
 
 /* download block */
 #download {
-    background-image: -moz-linear-gradient( 0deg, rgb(253,113,44) 0%, rgb(242,23,128) 100%);
-    background-image: -webkit-linear-gradient( 0deg, rgb(253,113,44) 0%, rgb(242,23,128) 100%);
-    background-image: -ms-linear-gradient( 0deg, rgb(253,113,44) 0%, rgb(242,23,128) 100%);
+    background-image: -moz-linear-gradient(0deg, rgb(253, 113, 44) 0%, rgb(242, 23, 128) 100%);
+    background-image: -webkit-linear-gradient(0deg, rgb(253, 113, 44) 0%, rgb(242, 23, 128) 100%);
+    background-image: -ms-linear-gradient(0deg, rgb(253, 113, 44) 0%, rgb(242, 23, 128) 100%);
     left: 0px;
     top: 0px;
     width: 100%;
@@ -687,6 +802,7 @@ button {
             color: rgb(255, 255, 255);
         }
     }
+
     &-block {
         margin-top: 10%;
         display: flex;
@@ -696,6 +812,7 @@ button {
         padding: 0;
         border-radius: 3px;
         height: 115px;
+
         &-icon {
             height: 100%;
             width: 32%;
@@ -704,40 +821,45 @@ button {
             display: flex;
             align-items: center;
             justify-content: center;
+
             i {
                 font-size: 58px;
                 color: #777777;
                 -webkit-text-stroke: 2px #d9dcde;
             }
         }
+
         &-text {
             display: flex;
             justify-content: flex-start;
             flex-direction: column;
             padding: 33px 0;
             margin-left: 30px;
+
             h3 {
                 .dos-bold;
                 font-size: 30px;
                 line-height: 0.8;
                 margin: 5px 0;
             }
+
             p {
                 .head-text;
                 margin: 5px 0;
             }
         }
+
         &:hover {
             .download-block {
                 &-icon {
                     i {
-                        background: -webkit-linear-gradient( 0deg, rgb(253,113,44) 0%, rgb(242,23,128) 100%); 
-                        -webkit-background-clip: text; 
-                        -webkit-text-fill-color: transparent; 
+                        background: -webkit-linear-gradient(0deg, rgb(253, 113, 44) 0%, rgb(242, 23, 128) 100%);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
                         display: initial;
                     }
-                }    
-            }   
+                }
+            }
         }
     }
 }
@@ -754,14 +876,16 @@ button {
         i {
             color: rgb(255, 255, 255);
             margin: 0 10px;
+
             &:hover {
-                background: -webkit-linear-gradient( 0deg, rgb(253,113,44) 0%, rgb(242,23,128) 100%); 
-                        -webkit-background-clip: text; 
-                        -webkit-text-fill-color: transparent; 
-                        display: initial;
+                background: -webkit-linear-gradient(0deg, rgb(253, 113, 44) 0%, rgb(242, 23, 128) 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                display: initial;
             }
         }
     }
+
     &-text {
         p {
             .rob-lgt;
